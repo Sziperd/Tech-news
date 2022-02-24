@@ -11,14 +11,20 @@
 		CB81ABAA27C134B8005FF197 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81ABA927C134B8005FF197 /* ContentView.swift */; };
 		CB81ABAC27C134BB005FF197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB81ABAB27C134BB005FF197 /* Assets.xcassets */; };
 		CB81ABAF27C134BB005FF197 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB81ABAE27C134BB005FF197 /* Preview Assets.xcassets */; };
+		CB81ABB727C13B04005FF197 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81ABB627C13B04005FF197 /* NetworkManager.swift */; };
+		CB81ABB927C13C3F005FF197 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81ABB827C13C3F005FF197 /* PostData.swift */; };
+		CB81ABBC27C1497A005FF197 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81ABBB27C1497A005FF197 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB81ABA427C134B8005FF197 /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB81ABA427C134B8005FF197 /* UkraineNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UkraineNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB81ABA727C134B8005FF197 /* HackerNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsApp.swift; sourceTree = "<group>"; };
 		CB81ABA927C134B8005FF197 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB81ABAB27C134BB005FF197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB81ABAE27C134BB005FF197 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB81ABB627C13B04005FF197 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CB81ABB827C13C3F005FF197 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		CB81ABBB27C1497A005FF197 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +49,7 @@
 		CB81ABA527C134B8005FF197 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB81ABA427C134B8005FF197 /* HackerNews.app */,
+				CB81ABA427C134B8005FF197 /* UkraineNews.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +57,9 @@
 		CB81ABA627C134B8005FF197 /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				CB81ABB527C13AF4005FF197 /* Models */,
 				CB81ABA727C134B8005FF197 /* HackerNewsApp.swift */,
-				CB81ABA927C134B8005FF197 /* ContentView.swift */,
+				CB81ABBA27C14969005FF197 /* Views */,
 				CB81ABAB27C134BB005FF197 /* Assets.xcassets */,
 				CB81ABAD27C134BB005FF197 /* Preview Content */,
 			);
@@ -65,6 +72,24 @@
 				CB81ABAE27C134BB005FF197 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB81ABB527C13AF4005FF197 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB81ABB627C13B04005FF197 /* NetworkManager.swift */,
+				CB81ABB827C13C3F005FF197 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB81ABBA27C14969005FF197 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB81ABA927C134B8005FF197 /* ContentView.swift */,
+				CB81ABBB27C1497A005FF197 /* DetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +109,7 @@
 			);
 			name = HackerNews;
 			productName = HackerNews;
-			productReference = CB81ABA427C134B8005FF197 /* HackerNews.app */;
+			productReference = CB81ABA427C134B8005FF197 /* UkraineNews.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB81ABB727C13B04005FF197 /* NetworkManager.swift in Sources */,
+				CB81ABB927C13C3F005FF197 /* PostData.swift in Sources */,
 				CB81ABAA27C134B8005FF197 /* ContentView.swift in Sources */,
+				CB81ABBC27C1497A005FF197 /* DetailView.swift in Sources */,
 				CB81ABA827C134B8005FF197 /* HackerNewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,13 +305,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SziperdApps.HackerNews;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "SziperdApps.Egg-Timer-App-2";
+				PRODUCT_NAME = UkraineNews;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,13 +335,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SziperdApps.HackerNews;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "SziperdApps.Egg-Timer-App-2";
+				PRODUCT_NAME = UkraineNews;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
