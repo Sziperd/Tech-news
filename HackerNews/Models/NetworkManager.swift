@@ -12,13 +12,29 @@ class NetworkManager: ObservableObject{
     
     @Published var posts = [Post]()
     
-    
+    func closeSession(){
+        
+        
+    }
     
     func fetchData(){
-        
-        if let url = URL(string: "https://newsapi.org/v2/everything?q=Ukraine&from=2022-02-24&sortBy=popularity&apiKey=45f398b987704e3c8f580ce6707170c1"){
+        //let userDefaults = UserDefaults.standard
+        //userDefaults.set("en", forKey: "Language")
+        let base1 = "https://newsapi.org/v2/everything?q=Ukraine&from=2022-02-24&sortBy=datey"
+       let base4 = UserDefaults.standard.string(forKey: "Language")
+        //let base2 = "en"
+        let base3 = "45f398b987704e3c8f580ce6707170c1"
+        var finalUrl: String
+        if (base4 == "ua"){
+            finalUrl = "https://newsapi.org/v2/top-headlines?country=ua&apiKey=45f398b987704e3c8f580ce6707170c1"
+        }else {finalUrl = "\(base1)&language=\(base4!)&apiKey=\(base3)"
+        }
+       if let url = URL(string: "\(finalUrl)"){
+           //if let url = URL(string: "https://newsapi.org/v2/everything?q=Ukraine&from=2022-02-24&sortBy=datey&language=pl&apiKey=45f398b987704e3c8f580ce6707170c1"){
+            print(url)
+            //  if let url = URL(string: "https://newsapi.org/v2/everything?q=Ukraine&from=2022-02-24&sortBy=datey&apiKey=45f398b987704e3c8f580ce6707170c1"){
             
-            let session = URLSession(configuration: .default)
+           let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
                 if error == nil {
                     let decoder = JSONDecoder()

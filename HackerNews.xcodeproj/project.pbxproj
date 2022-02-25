@@ -14,6 +14,7 @@
 		CB81ABB727C13B04005FF197 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81ABB627C13B04005FF197 /* NetworkManager.swift */; };
 		CB81ABB927C13C3F005FF197 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81ABB827C13C3F005FF197 /* PostData.swift */; };
 		CB81ABBC27C1497A005FF197 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB81ABBB27C1497A005FF197 /* DetailView.swift */; };
+		CBFE2D8827C8566200F72460 /* LanguageChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFE2D8727C8566200F72460 /* LanguageChoice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		CB81ABB627C13B04005FF197 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CB81ABB827C13C3F005FF197 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		CB81ABBB27C1497A005FF197 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CBFE2D8727C8566200F72460 /* LanguageChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageChoice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				CB81ABB627C13B04005FF197 /* NetworkManager.swift */,
 				CB81ABB827C13C3F005FF197 /* PostData.swift */,
+				CBFE2D8727C8566200F72460 /* LanguageChoice.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				CB81ABB727C13B04005FF197 /* NetworkManager.swift in Sources */,
 				CB81ABB927C13C3F005FF197 /* PostData.swift in Sources */,
+				CBFE2D8827C8566200F72460 /* LanguageChoice.swift in Sources */,
 				CB81ABAA27C134B8005FF197 /* ContentView.swift in Sources */,
 				CB81ABBC27C1497A005FF197 /* DetailView.swift in Sources */,
 				CB81ABA827C134B8005FF197 /* HackerNewsApp.swift in Sources */,
