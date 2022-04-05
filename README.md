@@ -24,7 +24,7 @@ iOS News fetching app
 
 - WebView
 - Using Newsapi.org api
-
+- UserDefaults
 
 ---
 
