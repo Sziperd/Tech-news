@@ -12,6 +12,7 @@ Full app preview here: https://www.instagram.com/p/Ca48uTcjn_g/
 ## Description
 
 iOS News fetching app
+
 -▫️Works in 3 languages, saves last chosen language and defaults it on next start-up
 
 -▫️Built-in WebView
